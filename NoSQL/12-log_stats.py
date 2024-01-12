@@ -2,8 +2,10 @@
 """Log stats"""
 from pymongo import MongoClient
 
+
 # Create a MongoClient to the running mongod instance
 client = MongoClient('mongodb://localhost:27017/')
+
 
 # Select the 'logs' database and 'nginx' collection
 db = client.logs
