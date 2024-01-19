@@ -17,4 +17,4 @@ class Building {
   }
 }
 
-  export default Building;
+export default Building;
