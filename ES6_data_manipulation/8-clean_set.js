@@ -1,20 +1,20 @@
 function cleanSet(set, startString) {
-    const string = [];
+  const string = [];
 
-    if (
+  if (
     typeof set !== 'object'
     || typeof startString !== 'string'
     || startString.length === 0
-    ) {
+  ) {
     return '';
-    }
+  }
 
-    for (const item of set) {
+  for (const item of set) {
     if (item && item.startsWith(startString)) {
-        string.push(item.slice(startString.length));
+      string.push(item.slice(startString.length));
     }
-    }
-    return string.join('-');
+  }
+  return string.join('-');
 }
 
 export default cleanSet;
