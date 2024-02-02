@@ -9,7 +9,7 @@ function updateStudentGradeByCity(students, city, newGrades) {
   const stCity = students.filter((student) => student.location === city);
 
   const studentsGraded = stCity.map((student) => {
-  const gradeFilter = newGrades.filter(
+    const gradeFilter = newGrades.filter(
       (newGrade) => newGrade.studentId === student.id,
     );
 
